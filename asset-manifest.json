@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.62534da1.css",
-    "main.js": "/personal-portfolio/static/js/main.8a584d51.js",
+    "main.css": "/personal-portfolio/static/css/main.7ef6d473.css",
+    "main.js": "/personal-portfolio/static/js/main.85a0c72a.js",
     "static/css/131.4fbb4d93.chunk.css": "/personal-portfolio/static/css/131.4fbb4d93.chunk.css",
     "static/js/131.6f5b324d.chunk.js": "/personal-portfolio/static/js/131.6f5b324d.chunk.js",
     "static/css/653.6893998e.chunk.css": "/personal-portfolio/static/css/653.6893998e.chunk.css",
@@ -25,8 +25,8 @@
     "static/media/linkedin-in-brands.svg": "/personal-portfolio/static/media/linkedin-in-brands.35e825d0be9371fea9e5.svg",
     "static/media/open.svg": "/personal-portfolio/static/media/open.f24ffa50743c4562d026.svg",
     "static/media/g.svg": "/personal-portfolio/static/media/g.c99824e75da4987c24cd.svg",
-    "main.62534da1.css.map": "/personal-portfolio/static/css/main.62534da1.css.map",
-    "main.8a584d51.js.map": "/personal-portfolio/static/js/main.8a584d51.js.map",
+    "main.7ef6d473.css.map": "/personal-portfolio/static/css/main.7ef6d473.css.map",
+    "main.85a0c72a.js.map": "/personal-portfolio/static/js/main.85a0c72a.js.map",
     "131.4fbb4d93.chunk.css.map": "/personal-portfolio/static/css/131.4fbb4d93.chunk.css.map",
     "131.6f5b324d.chunk.js.map": "/personal-portfolio/static/js/131.6f5b324d.chunk.js.map",
     "653.6893998e.chunk.css.map": "/personal-portfolio/static/css/653.6893998e.chunk.css.map",
@@ -35,7 +35,7 @@
     "914.0076104d.chunk.js.map": "/personal-portfolio/static/js/914.0076104d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62534da1.css",
-    "static/js/main.8a584d51.js"
+    "static/css/main.7ef6d473.css",
+    "static/js/main.85a0c72a.js"
   ]
 }
