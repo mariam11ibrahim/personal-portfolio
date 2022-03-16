@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.edc1fa8a.css",
-    "main.js": "/personal-portfolio/static/js/main.4b07405c.js",
-    "static/css/303.36ea9584.chunk.css": "/personal-portfolio/static/css/303.36ea9584.chunk.css",
-    "static/js/303.acf0976c.chunk.js": "/personal-portfolio/static/js/303.acf0976c.chunk.js",
-    "static/css/738.15d36d91.chunk.css": "/personal-portfolio/static/css/738.15d36d91.chunk.css",
-    "static/js/738.273efc06.chunk.js": "/personal-portfolio/static/js/738.273efc06.chunk.js",
-    "static/css/353.aacd3ba2.chunk.css": "/personal-portfolio/static/css/353.aacd3ba2.chunk.css",
-    "static/js/353.7d096c3e.chunk.js": "/personal-portfolio/static/js/353.7d096c3e.chunk.js",
+    "main.css": "/personal-portfolio/static/css/main.1efdb72b.css",
+    "main.js": "/personal-portfolio/static/js/main.4cc57561.js",
+    "static/css/303.d62ce1ae.chunk.css": "/personal-portfolio/static/css/303.d62ce1ae.chunk.css",
+    "static/js/303.5b1cc53e.chunk.js": "/personal-portfolio/static/js/303.5b1cc53e.chunk.js",
+    "static/css/738.36265db4.chunk.css": "/personal-portfolio/static/css/738.36265db4.chunk.css",
+    "static/js/738.9bac4ca2.chunk.js": "/personal-portfolio/static/js/738.9bac4ca2.chunk.js",
+    "static/css/353.34b7d5bc.chunk.css": "/personal-portfolio/static/css/353.34b7d5bc.chunk.css",
+    "static/js/353.f5c69a7a.chunk.js": "/personal-portfolio/static/js/353.f5c69a7a.chunk.js",
     "static/media/React.png": "/personal-portfolio/static/media/React.0306ff8827e578797802.png",
     "static/media/woman.png": "/personal-portfolio/static/media/woman.d1a3079c3caa8e61ad1f.png",
     "static/media/vscode.png": "/personal-portfolio/static/media/vscode.7f6e1fb4aba7ecb90aca.png",
@@ -25,17 +25,17 @@
     "static/media/linkedin-in-brands.svg": "/personal-portfolio/static/media/linkedin-in-brands.35e825d0be9371fea9e5.svg",
     "static/media/open.svg": "/personal-portfolio/static/media/open.f24ffa50743c4562d026.svg",
     "static/media/g.svg": "/personal-portfolio/static/media/g.c99824e75da4987c24cd.svg",
-    "main.edc1fa8a.css.map": "/personal-portfolio/static/css/main.edc1fa8a.css.map",
-    "main.4b07405c.js.map": "/personal-portfolio/static/js/main.4b07405c.js.map",
-    "303.36ea9584.chunk.css.map": "/personal-portfolio/static/css/303.36ea9584.chunk.css.map",
-    "303.acf0976c.chunk.js.map": "/personal-portfolio/static/js/303.acf0976c.chunk.js.map",
-    "738.15d36d91.chunk.css.map": "/personal-portfolio/static/css/738.15d36d91.chunk.css.map",
-    "738.273efc06.chunk.js.map": "/personal-portfolio/static/js/738.273efc06.chunk.js.map",
-    "353.aacd3ba2.chunk.css.map": "/personal-portfolio/static/css/353.aacd3ba2.chunk.css.map",
-    "353.7d096c3e.chunk.js.map": "/personal-portfolio/static/js/353.7d096c3e.chunk.js.map"
+    "main.1efdb72b.css.map": "/personal-portfolio/static/css/main.1efdb72b.css.map",
+    "main.4cc57561.js.map": "/personal-portfolio/static/js/main.4cc57561.js.map",
+    "303.d62ce1ae.chunk.css.map": "/personal-portfolio/static/css/303.d62ce1ae.chunk.css.map",
+    "303.5b1cc53e.chunk.js.map": "/personal-portfolio/static/js/303.5b1cc53e.chunk.js.map",
+    "738.36265db4.chunk.css.map": "/personal-portfolio/static/css/738.36265db4.chunk.css.map",
+    "738.9bac4ca2.chunk.js.map": "/personal-portfolio/static/js/738.9bac4ca2.chunk.js.map",
+    "353.34b7d5bc.chunk.css.map": "/personal-portfolio/static/css/353.34b7d5bc.chunk.css.map",
+    "353.f5c69a7a.chunk.js.map": "/personal-portfolio/static/js/353.f5c69a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edc1fa8a.css",
-    "static/js/main.4b07405c.js"
+    "static/css/main.1efdb72b.css",
+    "static/js/main.4cc57561.js"
   ]
 }
