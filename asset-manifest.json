@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.46968402.css",
-    "main.js": "/personal-portfolio/static/js/main.730fe8a9.js",
-    "static/css/303.d62ce1ae.chunk.css": "/personal-portfolio/static/css/303.d62ce1ae.chunk.css",
+    "main.css": "/personal-portfolio/static/css/main.5c813253.css",
+    "main.js": "/personal-portfolio/static/js/main.8e46b8bd.js",
+    "static/css/303.f8f0a35e.chunk.css": "/personal-portfolio/static/css/303.f8f0a35e.chunk.css",
     "static/js/303.750efca0.chunk.js": "/personal-portfolio/static/js/303.750efca0.chunk.js",
-    "static/css/738.04b73c31.chunk.css": "/personal-portfolio/static/css/738.04b73c31.chunk.css",
-    "static/js/738.7d76fb32.chunk.js": "/personal-portfolio/static/js/738.7d76fb32.chunk.js",
-    "static/css/353.6016788b.chunk.css": "/personal-portfolio/static/css/353.6016788b.chunk.css",
-    "static/js/353.f5c69a7a.chunk.js": "/personal-portfolio/static/js/353.f5c69a7a.chunk.js",
+    "static/css/738.09c483bc.chunk.css": "/personal-portfolio/static/css/738.09c483bc.chunk.css",
+    "static/js/738.9c4ebc9f.chunk.js": "/personal-portfolio/static/js/738.9c4ebc9f.chunk.js",
+    "static/css/353.bed85b39.chunk.css": "/personal-portfolio/static/css/353.bed85b39.chunk.css",
+    "static/js/353.10f4fcd4.chunk.js": "/personal-portfolio/static/js/353.10f4fcd4.chunk.js",
     "static/media/React.png": "/personal-portfolio/static/media/React.0306ff8827e578797802.png",
     "static/media/woman.png": "/personal-portfolio/static/media/woman.d1a3079c3caa8e61ad1f.png",
     "static/media/vscode.png": "/personal-portfolio/static/media/vscode.7f6e1fb4aba7ecb90aca.png",
     "static/media/Sass.png": "/personal-portfolio/static/media/Sass.c5da83bb9ff45b84e0e7.png",
     "static/media/Adobe XD.png": "/personal-portfolio/static/media/Adobe XD.9c224a9f684ab8cb6283.png",
+    "static/media/logo.png": "/personal-portfolio/static/media/logo.5c46f94d47697269c043.png",
     "static/media/Adobe Photoshop.png": "/personal-portfolio/static/media/Adobe Photoshop.047cad202c4a70579aa2.png",
     "static/media/CSS.png": "/personal-portfolio/static/media/CSS.463e319bad8e0edf1ef7.png",
     "static/media/TypeScript.png": "/personal-portfolio/static/media/TypeScript.af108db04a54d784da9b.png",
@@ -25,17 +26,17 @@
     "static/media/linkedin-in-brands.svg": "/personal-portfolio/static/media/linkedin-in-brands.35e825d0be9371fea9e5.svg",
     "static/media/open.svg": "/personal-portfolio/static/media/open.f24ffa50743c4562d026.svg",
     "static/media/g.svg": "/personal-portfolio/static/media/g.c99824e75da4987c24cd.svg",
-    "main.46968402.css.map": "/personal-portfolio/static/css/main.46968402.css.map",
-    "main.730fe8a9.js.map": "/personal-portfolio/static/js/main.730fe8a9.js.map",
-    "303.d62ce1ae.chunk.css.map": "/personal-portfolio/static/css/303.d62ce1ae.chunk.css.map",
+    "main.5c813253.css.map": "/personal-portfolio/static/css/main.5c813253.css.map",
+    "main.8e46b8bd.js.map": "/personal-portfolio/static/js/main.8e46b8bd.js.map",
+    "303.f8f0a35e.chunk.css.map": "/personal-portfolio/static/css/303.f8f0a35e.chunk.css.map",
     "303.750efca0.chunk.js.map": "/personal-portfolio/static/js/303.750efca0.chunk.js.map",
-    "738.04b73c31.chunk.css.map": "/personal-portfolio/static/css/738.04b73c31.chunk.css.map",
-    "738.7d76fb32.chunk.js.map": "/personal-portfolio/static/js/738.7d76fb32.chunk.js.map",
-    "353.6016788b.chunk.css.map": "/personal-portfolio/static/css/353.6016788b.chunk.css.map",
-    "353.f5c69a7a.chunk.js.map": "/personal-portfolio/static/js/353.f5c69a7a.chunk.js.map"
+    "738.09c483bc.chunk.css.map": "/personal-portfolio/static/css/738.09c483bc.chunk.css.map",
+    "738.9c4ebc9f.chunk.js.map": "/personal-portfolio/static/js/738.9c4ebc9f.chunk.js.map",
+    "353.bed85b39.chunk.css.map": "/personal-portfolio/static/css/353.bed85b39.chunk.css.map",
+    "353.10f4fcd4.chunk.js.map": "/personal-portfolio/static/js/353.10f4fcd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46968402.css",
-    "static/js/main.730fe8a9.js"
+    "static/css/main.5c813253.css",
+    "static/js/main.8e46b8bd.js"
   ]
 }
