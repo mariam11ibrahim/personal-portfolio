@@ -1,0 +1,15 @@
+    @import "../../scss/abstracts";
+    .projects {
+        position: relative;
+        z-index: 1000;
+        counter-reset: project;
+        display: block;
+        margin-bottom: 15vw;
+        margin-top: 10vh;
+        @include respond(med-screen) {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center!important;
+        }
+    }

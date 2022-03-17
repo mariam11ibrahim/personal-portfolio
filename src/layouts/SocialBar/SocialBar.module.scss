@@ -1,0 +1,33 @@
+@import "../../scss/abstracts";
+aside {
+    z-index: 1000000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    @include respond(small-screen) {
+        height: auto;
+    }
+    @include respond(larger-screen) {}
+    section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem !important;
+    }
+    a {
+        padding: 1rem 5rem;
+        @include respond(smaller-screen) {
+            padding: 2rem 2rem;
+        }
+        span {
+            width: 3rem !important;
+            height: 3rem !important;
+            padding: 0rem 0rem !important;
+            // background-color: $color-tertiary !important;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}

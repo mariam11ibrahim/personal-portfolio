@@ -1,0 +1,49 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==extra-small-screen {
+        @media only screen and (max-width: 21.87em) {
+            @content;
+        }
+    }
+    @if $breakpoint==smaller-screen {
+        @media only screen and (max-width: 36.87em) {
+            @content;
+        }
+    }
+    //870px
+    @if $breakpoint==small-screen {
+        @media only screen and (max-width: 54.37em) {
+            @content;
+        }
+    }
+    @if $breakpoint==med-screen {
+        @media only screen and (max-width: 62.5em) {
+            @content;
+        }
+    }
+    @if $breakpoint==large-screen {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpoint==larger-screen {
+        @media only screen and (max-width: 81.25em) {
+            @content;
+        }
+    }
+    @if $breakpoint==extra-larg-screen {
+        @media only screen and (min-width: 125em) {
+            @content;
+        }
+    }
+}
+
+@mixin gradientText {
+    background: linear-gradient(to bottom left, $color-secondary, #2ebf91);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin smaller-size {
+    transform: scale(.98);
+}

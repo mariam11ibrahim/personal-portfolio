@@ -1,0 +1,84 @@
+@import "../../scss/abstracts";
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5vw;
+    margin-top: 10vh;
+    @include respond(large-screen) {
+        margin-bottom: 10vw;
+        flex-direction: column;
+    }
+    @include respond(med-screen) {
+        margin-top: 5vh;
+    }
+    &__article {
+        padding-right: 3rem;
+        header {
+            display: inline-block;
+            color: $color-primary;
+        }
+        h1 {
+            font-size: $font-larger-size;
+            position: relative;
+            z-index: 1000;
+            @include respond(small-screen) {
+                font-size: $font-large-size;
+            }
+            &:hover .icon {
+                @include animate(wave, 1, ease, normal, infinite, none);
+            }
+        }
+        .icon {
+            padding-left: 3px;
+            display: inline-block;
+            @include animate(wave, .5, ease, alternate-reverse, 1, none);
+            transform-origin: bottom right !important;
+        }
+        p {
+            font-size: $font-small-size;
+            line-height: 1.8;
+            max-width: 55ch;
+            margin-bottom: 2rem;
+            margin: 3.5rem 0;
+        }
+        a {
+            margin: 0;
+        }
+    }
+    &__skills {
+        color: $color-primary;
+        padding-right: 5vw;
+        h1 {
+            font-size: $font-medium-size;
+            margin: 3rem 0;
+            line-height: 1;
+            text-decoration: underline;
+            text-decoration-style: wavy !important;
+            text-decoration-color: rgba($color-secondary, 0.8);
+        }
+        &__list {
+            font-size: $font-small-size;
+            line-height: 1.8;
+            display: flex;
+            @include respond(large-screen) {
+                justify-content: space-between;
+            }
+            @include respond(small-screen) {
+                display: block;
+            }
+            &__skills,
+            &__tools {
+                flex-grow: 1;
+            }
+            li {
+                list-style: none;
+                margin: 1px 0;
+                img {
+                    margin-right: 0.5rem;
+                    width: 1.9rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "../../scss/abstracts";
+footer {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    height: 5rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100000;
+    a {
+        font-weight: $font-bold;
+        color: $color-secondary;
+        text-decoration: none;
+        &:hover {
+            @include gradientText;
+        }
+    }
+}

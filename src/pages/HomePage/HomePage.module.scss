@@ -1,0 +1,105 @@
+@import "../../scss/abstracts.scss";
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__image {
+        display: inline-block;
+        cursor: pointer;
+        &:hover .image {
+            transform: translateX(-50%);
+        }
+        &:hover .greeting {
+            color: #00e400 !important;
+            font-weight: $font-bolder;
+            z-index: 1000;
+        }
+    }
+}
+
+.image {
+    display: inline-block;
+    font-size: 9rem;
+    position: relative;
+    z-index: 5000;
+    transition: all 0.5s ease-in-out;
+}
+
+.greeting {
+    font-size: $font-small-size;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 56%;
+    color: transparent;
+    @include respond(large-screen) {
+        left: 57%;
+    }
+    @include respond(med-screen) {
+        left: 58%;
+    }
+    @include respond(smaller-screen) {
+        left: 64%;
+    }
+}
+
+.caption {
+    color: $color-primary;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 0rem;
+    position: relative;
+    overflow: hidden !important;
+    .name-cursor,
+    .job-cursor {
+        font-size: 3rem;
+        font-weight: $font-bolder;
+    }
+    .name-cursor {
+        @include animate(fade, 0, initial, normal, initial, forwards);
+        animation-delay: 2.3s;
+    }
+    .job-cursor {
+        color: transparent;
+        @include animate( appear, 9, cubic-bezier(0.68, -0.55, 0.27, 1.55), reverse, 1, forwards);
+        animation-delay: 3s;
+        position: absolute;
+        bottom: 0;
+    }
+    &__name,
+    &__job {
+        overflow: hidden;
+        display: inline-block;
+        font-size: $font-larger-size;
+        font-weight: $font-bolder;
+        margin: 0.5rem 0;
+        white-space: nowrap;
+        overflow: hidden;
+        @include respond(smaller-screen) {
+            font-size: $font-large-size !important;
+        }
+        @include respond(extra-small-screen) {
+            font-size: $font-medium-size-2 !important;
+        }
+    }
+    &__name {
+        span {
+            font-family: "Jua", sans-serif;
+            @include gradientText;
+        }
+        // animation: typing 3s steps(25, end) forwards;
+        @include animate(typing, 2.5, steps(24, end), normal, initial, none);
+    }
+    &__job {
+        @include animate(typing, 2.5, steps(24, end), normal, initial, both);
+        animation-delay: 3s;
+    }
+}

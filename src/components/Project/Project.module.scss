@@ -1,0 +1,180 @@
+@import "../../scss/abstracts";
+.projects__figure {
+    display: flex;
+    justify-content: center;
+    &:not(:last-child) {
+        margin-bottom: 20vh;
+    }
+    @include respond(med-screen) {
+        justify-content: flex-start;
+    }
+    @include respond(small-screen) {
+        flex-direction: column-reverse;
+        min-width: 50vw;
+    }
+}
+
+.projects__img-container {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    transition: transform 0.5s ease-in;
+    border: 1px solid rgba(128, 128, 128, 0.068);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: rotate(12deg);
+    transform-origin: top left;
+    //
+    @include respond(large-screen) {
+        width: 35rem;
+        height: 30rem;
+        margin-right: 3rem;
+    }
+    @include respond(med-screen) {
+        transform: rotate(0);
+    }
+    @include respond(small-screen) {
+        margin: 0rem;
+    }
+    img {
+        object-fit: contain;
+        width: 100%;
+        min-height: 100%;
+        box-sizing: content-box;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        z-index: 9000;
+        border-radius: 50%;
+        top: -0.7rem;
+        left: -0.7rem;
+        background-color: $color-primary;
+        @include respond(med-screen) {
+            width: 0;
+        }
+    }
+    &::after {
+        content: "";
+        background: linear-gradient(to right, #ff52c521, #2ebf912c);
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0rem;
+        transition: width 1s ease-out !important;
+    }
+}
+
+.reverse-image {
+    transform: rotate(-12deg) !important;
+    transform-origin: top right !important;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        z-index: 9000;
+        border-radius: 50%;
+        top: 0rem;
+        right: 100% !important;
+        // background-color: $color-primary;
+        background-color: Red;
+        @include respond(med-screen) {
+            width: 0;
+        }
+    }
+}
+
+.projects__caption {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 3vw;
+    max-width: 50vw;
+    @include respond(large-screen) {
+        padding: 1vw;
+    }
+    @include respond(small-screen) {
+        min-width: 70vw;
+    }
+    h1 {
+        font-size: $font-large-size;
+        color: $color-primary;
+        font-weight: $font-bolder;
+    }
+    h1:before {
+        content: "0" counter(project) ".";
+        counter-increment: project;
+        top: 4rem;
+        font-size: $font-small-size;
+        @include gradientText;
+        font-weight: $font-bolder;
+    }
+    &__details {
+        font-size: $font-small-size;
+        color: $color-primary;
+        @include respond(small-screen) {
+            margin: 2rem 0;
+        }
+        p {
+            max-width: 100ch;
+        }
+    }
+    &__skill-list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        @include respond(med-screen) {
+            // justify-content: center;
+        }
+        li {
+            font-size: $font-smaller-size;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+            font-weight: $font-regular;
+            padding: .7rem 2rem;
+            border-radius: 1px;
+            background-color: rgba($color-secondary, 0.1);
+            list-style: none;
+            margin: 0.5rem 0;
+            margin-right: 2rem;
+            @include respond(med-screen) {
+                font-size: $font-smaller-size;
+                padding: 0.7rem 1.8rem;
+            }
+        }
+    }
+    &__preview {
+        display: flex;
+        @include respond(small-screen) {
+            margin: 2rem 0;
+        }
+        a {
+            max-width: 20rem;
+            font-size: $font-small-size;
+            font-weight: $font-bolder;
+            flex: 1;
+            color: $color-secondary;
+            text-decoration: none;
+            border-radius: 1px;
+            padding: 1.5rem;
+            padding-left: 0;
+            margin-right: 1rem;
+            &:hover {
+                @include gradientText;
+                transform: scale(.99);
+            }
+        }
+    }
+}
+
+.projects__figure:hover .projects__img-container {
+    transform: rotate(0deg)!important;
+    box-shadow: none;
+}
+
+.projects__figure:hover .projects__img-container::after {
+    width: 0;
+}

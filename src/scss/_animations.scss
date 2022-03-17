@@ -1,0 +1,112 @@
+@keyframes blinking {
+    from {
+        height: 1px;
+    }
+    to {
+        height: 4vw;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 1rem;
+        visibility: hidden;
+    }
+    to {
+        width: 100%;
+        visibility: visible;
+        z-index: -100;
+    }
+}
+
+@keyframes fade {
+    from {
+        color: $color-primary;
+    }
+    to {
+        color: transparent;
+        display: none !important;
+    }
+}
+
+@keyframes appear {
+    from {
+        color: transparent;
+    }
+    to {
+        color: $color-primary;
+    }
+}
+
+@keyframes gradient {
+    from {
+        background: linear-gradient(to right, $color-secondary, #2ebf91);
+    }
+    to {
+        background: linear-gradient(to left, $color-secondary, #2ebf91);
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(9deg);
+    }
+    20% {
+        transform: rotate(18deg);
+    }
+    30% {
+        transform: rotate(24deg);
+    }
+    40% {
+        transform: rotate(36deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    60% {
+        transform: rotate(36deg);
+    }
+    70% {
+        transform: rotate(24deg);
+    }
+    80% {
+        transform: rotate(18deg);
+    }
+    90% {
+        transform: rotate(9deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@mixin animate( $name, $duration, $timing-fn, $direction, $iteration-count, $fill-mode) {
+    animation-name: $name;
+    animation-duration: $duration + s;
+    animation-timing-function: $timing-fn;
+    animation-direction: $direction;
+    animation-iteration-count: $iteration-count;
+    animation-fill-mode: $fill-mode;
+}
+
+// @mixin blinkingAnimation() {
+//     animation-name: blinking;
+// }
+// @mixin typingAnimation {
+//     animation-name: typing;
+// }
+// @mixin fadeAnimation {
+//     animation-name: fade;
+// }
+// @mixin appearAnimation {
+//     animation-name: appear;
+// }
+// @mixin gradientAnimation {
+//     animation-name: gradient;
+// }
+// @mixin waveAnimation {
+//     animation-name: wave;
+// }

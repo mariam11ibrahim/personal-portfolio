@@ -1,0 +1,119 @@
+@import "../../scss/abstracts";
+.nav {
+    font-size: $font-medium-size;
+    padding: 1rem 5rem;
+    position: relative;
+    z-index: 10000;
+    //___SCREEN
+    @include respond(med-screen) {
+        padding: 1rem 0rem;
+    }
+    ul {
+        text-align: right;
+        @include respond(med-screen) {
+            text-align: center;
+        }
+    }
+    li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 2rem;
+        padding-top: 3.1rem;
+        margin: 0 auto;
+        //___SCREENS
+        @include respond(med-screen) {
+            min-width: 50vw;
+        }
+        @include respond(med-screen) {
+            // font-size: $font-small-size;
+        }
+        @include respond(small-screen) {
+            font-size: $font-medium-size;
+        }
+        @include respond(smaller-screen) {
+            font-weight: $font-bolder;
+        }
+    }
+    a {
+        color: $color-primary;
+        text-decoration: none;
+        font-weight: $font-bold;
+    }
+    li:hover a {
+        color: $color-secondary;
+        font-weight: $font-bolder;
+    }
+    li:hover a:after {
+        @extend .blinking_dash;
+    }
+    &__logo-box {
+        position: absolute;
+        top: 2rem;
+        left: 6vw;
+        cursor: pointer;
+        .logo {
+            font-size: $font-larger-size;
+            z-index: 100000000;
+        }
+    }
+    figcaption {
+        margin-top: -1.7rem
+    }
+    &__logo-title {
+        font-family: "Jua", sans-serif;
+        color: $color-primary;
+        font-weight: $font-regular;
+        font-size: $font-smaller-size;
+        .icon-greater {
+            display: inline-block;
+            background-color: $color-secondary;
+            width: 1.5rem;
+            height: 1.8rem;
+            margin: 0 0.5rem;
+            mask: url(../../assets/g.svg) no-repeat center/contain;
+            -webkit-mask: url(../../assets/g.svg) no-repeat center/contain;
+            display: none;
+            //__SCREEN
+            @include respond(small-screen) {
+                display: none;
+            }
+        }
+    }
+    .active-nav {
+        display: none;
+        font-size: $font-smaller-size;
+        font-weight: $font-bold;
+        color: $color-primary;
+        //__SCREEN
+        @include respond(small-screen) {
+            display: none;
+        }
+    }
+}
+
+.blinking_dash {
+    content: "_";
+    font-size: $font-medium-size;
+    font-weight: $font-bold;
+    position: absolute;
+    animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+    form {
+        color: $color-primary;
+    }
+    to {
+        color: $color-tertiary;
+    }
+}
+
+.hide {
+    display: none !important;
+    width: 0%;
+}
+
+.right {
+    text-align: right !important;
+    padding-right: 4vw;
+}

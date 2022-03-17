@@ -1,0 +1,39 @@
+@import "../../scss/abstracts";
+.icons-social {
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 5vh;
+}
+
+.icon-link {
+    display: inline-block;
+    transition: transform .1s;
+}
+
+.email-link:hover,
+.linkedin-link:hover,
+.github-link:hover {
+    transform: scale(.95);
+}
+
+.icon {
+    display: inline-block;
+    padding: 1rem 5rem;
+    background-color: $color-primary;
+    transition: transform .1s;
+    &:hover {
+        @include animate(gradient, 0.7, ease, normal, infinite, none);
+    }
+    &--linkedin {
+        -webkit-mask: url(../../assets/linkedin-in-brands.svg) no-repeat center/contain;
+        mask: url(../../assets/linkedin-in-brands.svg) no-repeat center/contain;
+    }
+    &--email {
+        -webkit-mask: url(../../assets/envelope-solid.svg) no-repeat center/contain;
+        mask: url(../../assets/envelope-solid.svg) no-repeat center/contain;
+    }
+    &--github {
+        -webkit-mask: url(../../assets/github-brands.svg) no-repeat center/contain;
+        mask: url(../../assets/github-brands.svg) no-repeat center/contain;
+    }
+}

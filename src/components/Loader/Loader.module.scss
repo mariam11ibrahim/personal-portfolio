@@ -1,0 +1,42 @@
+@import "../../scss/abstracts";
+.loader {
+    color: $color-primary;
+    background-image: url(../../assets/endless-constellation.svg);
+    font-size: $font-larger-size;
+    font-weight: $font-bolder;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 5000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    @include respond(small-screen) {
+        font-size: $font-medium-size;
+    }
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    &__icon {
+        display: inline-block;
+        border-bottom: .5px solid $color-primary;
+        height: 1px;
+        overflow: hidden;
+        animation: .5s ease forwards blinking;
+    }
+    &__text {
+        display: inline-block;
+        margin: 0.5rem 0;
+        width: 0rem;
+        white-space: nowrap;
+        overflow: hidden;
+        @include animate(typing, 2, steps(24, end), normal, initial, none);
+        animation-delay: .5s;
+    }
+}

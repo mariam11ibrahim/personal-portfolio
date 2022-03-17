@@ -1,0 +1,78 @@
+.App {
+    min-height: 100%;
+    background-image: url(./assets/endless-constellation.svg);
+    position: relative;
+}
+
+main {
+    padding: 0rem 8vw;
+    padding-bottom: 4vh;
+    margin: 5vh 0 !important;
+}
+
+.open-tag,
+.close-tag {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(140, 82, 255, 0.04);
+    position: absolute;
+    display: none;
+}
+
+.open-tag {
+    left: 1rem;
+    top: 0;
+    mask: url(./assets/open.svg) no-repeat center / contain;
+    -webkit-mask: url(./assets/open.svg) no-repeat center / contain;
+}
+
+.close-tag {
+    bottom: 3rem;
+    left: 3rem;
+    mask: url(./assets/close.svg) no-repeat center / contain;
+    -webkit-mask: url(./assets/close.svg) no-repeat center / contain;
+    animation: rotation 50s ease infinite;
+    transform-origin: center !important;
+}
+
+::selection {
+    color: white;
+    background: #8c52ff;
+}
+
+
+/* @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
